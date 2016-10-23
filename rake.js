@@ -15,7 +15,7 @@ Rake: Rapid Automatic Keyword Extraction
 */
 
 //global
-var keywords;
+var keywords, stopwords;
 
 function splitSentences(text){
   var clean = text.replace(/[|&$%^*\(\)-+'"]/g, "");
@@ -130,7 +130,7 @@ window.onload = function(){
 };
 
 
-var stopwords = ['a',
+stopwords = ['a',
  'about',
  'above',
  'across',
